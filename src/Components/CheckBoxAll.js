@@ -1,6 +1,7 @@
 import React from 'react'
 
 export const CheckBoxAll = props => {
+    console.log(props.value)
     return (
       <li>
        <input key={props.id} 
@@ -10,7 +11,9 @@ export const CheckBoxAll = props => {
        {props.value}
       </li>
     )
+    
 }
+
 
 
 export default CheckBoxAll;

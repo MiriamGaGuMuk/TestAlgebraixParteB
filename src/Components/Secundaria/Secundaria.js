@@ -9,8 +9,7 @@ class Secundaria extends Component {
     constructor(props) {
         super(props)
         this.state = {
-          second: [
-            {id: 1, value: "Secundaria", isChecked: false},
+          highSchool: [
             {id: 1, value: "Primero", isChecked: false},
             {id: 1, value: "Segundo", isChecked: false},
             {id: 1, value: "Tercero", isChecked: false}
@@ -20,18 +19,18 @@ class Secundaria extends Component {
       }
       
       handleAllChecked = (event) => {
-        let second = this.state.second
-        second.forEach(segundo => segundo.isChecked = event.target.checked) 
-        this.setState({second: second})
+        let highSchool = this.state.highSchool
+        highSchool.forEach(secundaria => secundaria.isChecked = event.target.checked) 
+        this.setState({highSchool: highSchool})
       }
     
       handleCheckChieldElement = (event) => {
-        let second = this.state.second
-        second.forEach(segundo => {
-           if (segundo.value === event.target.value)
-              segundo.isChecked =  event.target.checked
+        let highSchool = this.state.highSchool
+        highSchool.forEach(secundaria => {
+           if (secundaria.value === event.target.value)
+              secundaria.isChecked =  event.target.checked
         })
-        this.setState({second: second})
+        this.setState({highSchool: highSchool})
       }
     
     
@@ -39,14 +38,14 @@ class Secundaria extends Component {
         return (
           <div>
           <input type="checkbox" onChange={this.handleAllChecked}  value="checkedall" />Secundaria
-            <ul>
+          <ul>
             {
-              this.state.second.map((segundo, index) => {
+              this.state.highSchool.map((secundaria, index) => {
                 return (
                 <CheckBoxAll 
                 key={index} 
                 handleCheckChieldElement={this.handleCheckChieldElement} 
-                 {...segundo} />)
+                 {...secundaria} />)
               })
             }
             </ul>

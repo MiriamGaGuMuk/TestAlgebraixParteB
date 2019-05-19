@@ -1,8 +1,54 @@
 .checkbox__container{
     display: block;
+    
 }
 
-/* label{
-    outline: 1px solid red;
-    display: inline-block;
-} */
+.table_container{
+    width: 60%;
+    margin-left: 10%;
+    padding: 1px;
+}
+
+
+.Secundaria, .third_level, .second_level{
+    border: 1px solid rgba(3, 161, 148, 0.486);
+    border-radius: 5px;
+    box-shadow: 2px 2px rgb(85, 79, 89);
+    background-color:rgba(168, 242, 245, 0.822);
+}
+
+.Secundaria{
+    margin-top: 5%; 
+}
+
+.second_level{
+    width: 90%;
+}
+.third_level{
+    width: 50%; 
+    margin-left: 25%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    
+}
+.third_level:last-child{
+    /* outline: 1px solid darkslateblue; */
+    margin-bottom: 8%;
+}
+
+.Secundaria:hover{
+    background-color: rgba(3, 78, 72, 0.678);
+    color: whitesmoke;
+}
+
+.second_level:hover {
+    /* outline: 1px solid darkslateblue; */
+    background-color: rgba(5, 97, 100, 0.486);
+    color: whitesmoke;
+}
+
+.third_level:hover {
+    /* outline: 1px solid darkslateblue; */
+    background-color: rgba(30, 98, 107, 0.226);
+    color: whitesmoke;
+}

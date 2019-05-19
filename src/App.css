@@ -1,19 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
+/* font-family: 'Inconsolata', monospace; */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
+
 body{
-  background-color: rgba(210, 180, 140, 0.521);
+  /* background-color: rgba(85, 79, 89, 0.815); */
+  background: url('https://images.pexels.com/photos/1187974/pexels-photo-1187974.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center fixed;
+  background-size: cover;
+  /* filter: blur(1px); */
+  color: rgb(72, 72, 73);
+  text-shadow: 1px 1px 1px  rgba(178, 124, 240, 0.863);
+  font-family: 'Inconsolata', monospace;
 }
 
 .App {
   /* outline: 1px solid violet; */
   width: 80%;
+  height: 100%;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 4%;
   text-align: left;
-  background-color: rgb(250, 235, 221);
+  background-color: rgba(244, 209, 249, 0.788);
   box-shadow: 3px 2px rgba(26, 7, 7, 0.363);
   border-radius: 10px; 
   }
